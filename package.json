@@ -1,0 +1,28 @@
+{
+  "name": "@xiehaibin18/dsh-plugin-dev",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bun development utilities for DeepSeek Harness plugins.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiehaibin18/dsh-plugin-dev.git"
+  },
+  "exports": {
+    "./appearance": "./appearance.tsx",
+    "./build": "./build.ts",
+    "./preview": "./preview.ts"
+  },
+  "files": ["appearance.tsx", "build.ts", "preview.ts"],
+  "scripts": {
+    "test": "bun --no-env-file test"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
